@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Covid-19 | Estatísticas</title>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/index.css">
+
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<div class="app">
+			<div class="active-cases">
+				<img src="assets/virus.png">
+
+				<div class="active-cases-information">
+					<p id="active-cases">0</p>
+					<p>Casos Ativos</p>
+				</div>  
+			</div>
+
+			<div class="statistics">
+				<div class="statistics-header">
+					<select onChange="onChange(this)">
+						<option value="yesterday">Ontem</option>
+						<option value="lastweek">Últimos 7 dias</option>
+						<option value="lastmonth">Últimos 30 dias</option>
+					</select>
+				</div>
+
+				<div class="statistics-table"></div>
+			</div>
+		</div>
+	</body>
+</html>
